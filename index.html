@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTER EN CSS</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="them-color" content="#2091F9">
+<meta name="title" content="aprende css desde cero" />
+<meta name="description" content="curso de css con jose manuel ruiz arguelles | 5E 777" />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ManuelRuiz.github.io" />
+<meta property="og:title" content="aprende css desde cero" />
+<meta property="og:description" content="curso de css con jose manuel ruiz arguelles | 5E 777" />
+<meta property="og:image" content="https://ManuelRuiz.github.io/images/css.jpg" />
+
+<!-- X (Twitter) -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://ManuelRuiz.github.io" />
+<meta property="twitter:title" content="aprende css desde cero" />
+<meta property="twitter:description" content="curso de css con jose manuel ruiz arguelles | 5E 777" />
+<meta property="twitter:image" content="https://ManuelRuiz.github.io/images/css.jpg" />
+
+<!-- Meta Tags Generated with https://metatags.io -->
+</head>
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Curso CSS.</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#Inicio" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#Acerca" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#contacto" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#Blog" class="nav__links">Blog</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container" id="Inicio">
+            <h1 class="hero__title">Aprende CSS3 desde CERO hasta dominarlo.</h1>
+            <p class="hero__paragraph">Elige aprender CSS de una vez por todas, una vez que termines este curso serás
+                capaz de crear cualquier layout con CSS y crear tus propias animaciones.</p>
+            <a href="#" class="cta">Comienza ahora</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">¿Qué aprenderás en este curso?</h2>
+            <p class="about__paragraph">Todo lo necesario y obligatorio de CSS, (Flexbox, Grid, Custom properties,
+                Position, Animaciones, Box Model y más)</p>
+
+            <div class="about__main" id="Acerca">
+                <article class="about__icons">
+                    <img src="./images/shapes.svg" class="about__icon">
+                    <h3 class="about__title">CSS Layouts</h3>
+                    <p class="about__paragrah">Los CSS Layouts (diseños o maquetaciones en CSS) 
+                        son el conjunto de técnicas, propiedades y modelos en hojas de estilo 
+                        que se utilizan para organizar, posicionar y estructurar los elementos 
+                        visuales de una página web en relación con la pantalla o el navegador</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/paint.svg" class="about__icon">
+                    <h3 class="about__title">Animaciones</h3>
+                    <p class="about__paragrah">Las animaciones en CSS son efectos visuales que permiten 
+                        cambiar gradualmente el estilo de un elemento HTML a lo largo del tiempo, 
+                        pasando por dos o más estados sin necesidad de usar JavaScript.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/code.svg" class="about__icon">
+                    <h3 class="about__title">Sass</h3>
+                    <p class="about__paragrah"> (Syntactically Awesome Style Sheets) es un preprocesador 
+                        de CSS que extiende las capacidades del lenguaje tradicional al añadir herramientas 
+                        propias de la programación, como variables, mixins, funciones, bucles y selectores anidados.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Curso completo de CSS3. ¡Domina CSS de una vez por todas!</h2>
+                    <p class="knowledge__paragraph">Mientras que HTML se encarga de la estructura y el contenido 
+                        (textos, imágenes, títulos), CSS define cómo se ve ese contenido: colores, tipografías, 
+                        márgenes, fondos, animaciones y la distribución en la pantalla. Un curso de CSS es un 
+                        programa de aprendizaje diseñado para enseñarte a dominar estas reglas y transformar una 
+                        página web básica en una interfaz atractiva y adaptable.</p>
+                    <a href="#" class="cta">Entra al curso</a>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./images/macbook.png" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="price container">
+            <h2 class="subtitle">Obten el plan perfecto para aprender</h2>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name">Flexbox</p>
+                    <h3 class="price__price">Free</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Flexbox</p>
+                        <p class="price__features">Layouts</p>
+                        <p class="price__features">Responsive</p>
+                    </div>
+
+                    <a href="#" class="price__cta">Empieza ahora</a>
+                </div>
+
+
+                <div class="price__element price__element--best">
+                    <p class="price__name">Grid</p>
+                    <h3 class="price__price">$30/mes</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Grid</p>
+                        <p class="price__features">Implicit Grid</p>
+                        <p class="price__features">Responsive</p>
+                    </div>
+
+                    <a href="#" class="price__cta">Empieza ahora</a>
+                </div>
+
+
+                <div class="price__element">
+                    <p class="price__name">Animaciones</p>
+                    <h3 class="price__price">$40/mes</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Animation</p>
+                        <p class="price__features">Transition</p>
+                        <p class="price__features">Render Website</p>
+                    </div>
+
+                    <a href="#" class="price__cta">Empieza ahora</a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+
+                <section class="testimony__body testimony__body--show" data-id="1" id="Blog">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Ellis guzman,<span class="testimony__course">estudiante
+                                de CSS.</span></h2>
+                        <p class="testimony__review">TheGrefg, cuyo nombre real es David Cánovas Martínez, es uno de los creadores de contenido y streamers
+                            españoles más influyentes del mundo hispanohablante. Nacido en 1997, comenzó su trayectoria en YouTube en 2012 subiendo videos 
+                            de Call of Duty, pero alcanzó el estrellato masivo gracias a Fortnite, videojuego en el que hizo historia en enero de 2021 
+                            al batir el récord mundial de Twitch con más de 2,4 millones de espectadores simultáneos para presentar su propia skin oficial.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face.png" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es rochelle corona, <span class="testimony__course">estudiante de
+                                CSS.</span></h2>
+                        <p class="testimony__review">es un músico estadounidense,
+                             conocido por ser el vocalista, guitarrista rítmico,
+                              principal compositor y cofundador de la banda Metallica.
+                               Es considerado como uno de los mejores músicos de heavy metal 
+                               de todos los tiempos.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face2.png" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Nick lopez, <span class="testimony__course">estudiante de
+                                CSS.</span></h2>
+                        <p class="testimony__review">Él es un capitán del Ejército Imperial Japonés que destaca por su inquebrantable sentido del honor,
+                            su profunda devoción al Emperador de Japón y su maestría en el combate con armas blancas, siendo su fiel katana su elemento
+                            más representativo. Dentro de la compleja e intrincada narrativa de la historia de los zombis (la línea temporal de Éter), 
+                            existen principalmente dos versiones de él: el Takeo "Ultimis", que es la versión original, más estereotipada y agresiva afectada 
+                            por el elemento 115, y el Takeo "Primis", una versión más joven, sabia, reflexiva y seria que lucha junto a Richtofën, Dempsey y Nikolai 
+                            para intentar salvar y corregir el universo.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face3.png" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Coach perez, <span class="testimony__course">estudiante de
+                                CSS.</span></h2>
+                        <p class="testimony__review">Él es un joven cantante y compositor mexicano originario de Culiacán, Sinaloa.
+                            El artista ha explicado en entrevistas que las siglas de su nombre artístico provienen directamente de 
+                            las iniciales de sus apellidos y su segundo nombre (Alan Moreno Franco).</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face4.png" class="testimony__img">
+                    </figure>
+                </section>
+
+
+                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+            </div>
+        </section>
+
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes</h2>
+            <p class="questions__paragraph">apariencia a las páginas web. Mientras que HTML se encarga de la estructura del contenido, 
+                CSS controla los colores, las tipografías, los márgenes, las imágenes y la distribución visual.</p>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué es CSS?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">El lenguaje CSS fue propuesto originalmente 
+                            por Håkon Wium Lie en 1994 y desarrollado por el consorcio W3C 
+                            (World Wide Web Consortium). Antes de su llegada, los programadores 
+                            tenían que definir los colores y fuentes dentro del propio código HTML, 
+                            lo que hacía que las páginas fueran pesadas y difíciles de mantener.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué aprenderé en este curso?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">aprendes a transformar estructuras básicas de texto 
+                            en interfaces web atractivas, profesionales y funcionales. 
+                            Pasas de crear páginas que parecen documentos antiguos de 
+                            Word a diseñar sitios modernos y visualmente impactantes.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué es CSS GRID?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">CSS Grid Layout (o simplemente CSS Grid) 
+                            es un sistema de diseño bidimensional nativo de CSS que permite crear 
+                            estructuras de páginas web basadas en filas y columnas al mismo tiempo.
+
+                            A diferencia de las herramientas del pasado (como las tablas o los floats) y de Flexbox 
+                            (que está diseñado principalmente para una sola dimensión, ya sea fila o columna), 
+                            CSS Grid te da el control total de ambos ejes.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="questions__offer">
+                <h2 class="subtitle">¿Estas listo para aprender CSS?</h2>
+                <p class="questions__copy">Para profundizar en tus conocimientos de CSS, 
+                    aquí tienes conceptos avanzados clave que suelen ser de mucha utilidad 
+                    para dominar el diseño web moderno:</p>
+                <a href="#" class="cta">Aprende ahora</a>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Curso CSS.</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form"   action="https://formspree.io/f/xljgwkdd"
+  method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="email">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container" id="contacto">
+            <div class="footer__social">
+                <a href="https://www.facebook.com" class="footer__icons" target="_blank"><img src="./images/facebook.svg" class="footer__img" ></a>
+                <a href="https://www.x.com" class="footer__icons" target="_blank"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="https://www.youtube.com" class="footer__icons" target="_blank"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Ruiz Arguelles José Manuel</h3>
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
