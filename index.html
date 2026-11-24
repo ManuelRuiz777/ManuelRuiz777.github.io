@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ruiz Arguelles Jose Manuel 5E</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/nota.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Festival 2026</div>
+
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#entradas">Entradas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PORTADA -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Festival de Verano 2026</h1>
+                <p>Tres artistas, una experiencia inolvidable</p>
+                <a href="#entradas" class="cta-button">Comprar entradas</a>
+            </div>
+        </section>
+
+        <!-- ARTISTAS -->
+        <section id="artistas">
+            <h2>Artistas destacados</h2>
+
+            <p class="aviso">
+                Fechas, sedes y precios ficticios para este proyecto escolar;
+                no son anuncios oficiales.
+            </p>
+
+            <div class="artistas-grid">
+
+                <div class="artista-card">
+                    <img src="img/artist1.jpg" alt="Tito Double P">
+
+                    <h3>Tito Double P</h3>
+                    <p>Música mexicana · Corridos tumbados</p>
+
+                    <div class="info-concierto">
+                        <h4>Próximo concierto</h4>
+                        <p><strong>Fecha:</strong> 15 de diciembre de 2026</p>
+                        <p><strong>Hora:</strong> 9:00 p. m.</p>
+                        <p><strong>Lugar:</strong> Arena Ciudad de México</p>
+                        <p><strong>Ciudad:</strong> Ciudad de México</p>
+                        <p><strong>Entrada general:</strong> $1,800 MXN</p>
+                        <p><strong>Entrada VIP:</strong> $4,500 MXN</p>
+                    </div>
+                </div>
+
+                <div class="artista-card">
+                    <img src="img/artist2.jpg" alt="El Malilla">
+
+                    <h3>El Malilla</h3>
+                    <p>Reguetón mexicano · Música urbana</p>
+
+                    <div class="info-concierto">
+                        <h4>Próximo concierto</h4>
+                        <p><strong>Fecha:</strong> 18 de diciembre de 2026</p>
+                        <p><strong>Hora:</strong> 8:30 p. m.</p>
+                        <p><strong>Lugar:</strong> Auditorio Telmex</p>
+                        <p><strong>Ciudad:</strong> Guadalajara, Jalisco</p>
+                        <p><strong>Entrada general:</strong> $1,800 MXN</p>
+                        <p><strong>Entrada VIP:</strong> $4,500 MXN</p>
+                    </div>
+                </div>
+
+                <div class="artista-card">
+                    <img src="img/artist3.jpg" alt="Mac DeMarco">
+
+                    <h3>Mac DeMarco</h3>
+                    <p>Indie rock · Indie pop</p>
+
+                    <div class="info-concierto">
+                        <h4>Próximo concierto</h4>
+                        <p><strong>Fecha:</strong> 20 de diciembre de 2026</p>
+                        <p><strong>Hora:</strong> 8:00 p. m.</p>
+                        <p><strong>Lugar:</strong> Showcenter Complex</p>
+                        <p><strong>Ciudad:</strong> Monterrey, Nuevo León</p>
+                        <p><strong>Entrada general:</strong> $1,800 MXN</p>
+                        <p><strong>Entrada VIP:</strong> $4,500 MXN</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ENTRADAS -->
+        <section id="entradas">
+            <h2>Tipos de entradas</h2>
+
+            <div class="entradas-grid">
+
+                <div class="entrada-card">
+                    <h3>Entrada Básica</h3>
+                    <p class="precio">$1,800 MXN</p>
+
+                    <ul>
+                        <li>Acceso al festival</li>
+                        <li>Conciertos principales</li>
+                        <li>Área general</li>
+                    </ul>
+
+                    <button onclick="alert('Has seleccionado la Entrada Básica')">
+                        Comprar
+                    </button>
+                </div>
+
+                <div class="entrada-card destacada">
+                    <h3>Entrada VIP</h3>
+                    <p class="precio">$4,500 MXN</p>
+
+                    <ul>
+                        <li>Todos los beneficios de la entrada básica</li>
+                        <li>Acceso a zona VIP</li>
+                        <li>Área preferente y zona de descanso</li>
+                    </ul>
+
+                    <button onclick="alert('Has seleccionado la Entrada VIP')">
+                        Comprar
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CONTACTO Y REDES SOCIALES -->
+    <footer>
+        <section class="contacto" id="contacto">
+
+            <div class="contact-content">
+                <p class="subtitulo">QUEREMOS CONOCER TU OPINIÓN</p>
+
+                <h2>Contáctanos</h2>
+
+                <p class="descripcion">
+                    Déjanos tus comentarios y cuéntanos qué artista te gustó más.
+                </p>
+
+                
+<form action="https://formspree.io/f/xljgwkdd" method="POST">
+
+    <input type="email" name="email"
+           placeholder="Escribe tu correo" required>
+
+    <textarea name="comentarios"
+              placeholder="Comentarios y sugerencias"
+              rows="4"></textarea>
+
+    <label for="artista">¿Qué artista te gustó más?</label>
+
+    <select name="artista" id="artista" required>
+        <option value="">Selecciona un artista</option>
+        <option value="Tito Double P">Tito Double P</option>
+        <option value="El Malilla">El Malilla</option>
+        <option value="Mac DeMarco">Mac DeMarco</option>
+    </select>
+
+    <input type="submit" class="btn-enviar" value="Enviar">
+
+</form>
+
+
+                <!-- REDES SOCIALES DEBAJO DEL FORMSPREE -->
+                <div class="redes-sociales">
+
+                    <h3>Síguenos en redes sociales</h3>
+                    <p>Conoce más sobre nuestros artistas favoritos.</p>
+
+                    
+<div class="social-links">
+
+    <div class="red-artista">
+        <h4>Tito Double P</h4>
+        <a href="https://www.instagram.com/titodoublep/" target="_blank">
+            <img src="img/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com/results?search_query=Tito+Double+P" target="_blank">
+            <img src="img/youtube.png" alt="YouTube">
+        </a>
+    </div>
+
+    <div class="red-artista">
+        <h4>El Malilla</h4>
+       <a href="https://music.youtube.com/search?q=El+Malilla" target="_blank" rel="noopener noreferrer">
+    <img src="img/aplicacion.png" alt="YouTube Music">
+</a>
+        <a href="https://x.com/search?q=El%20Malilla" target="_blank">
+            <img src="img/gorjeo.png" alt="X">
+        </a>
+    </div>
+
+    <div class="red-artista">
+        <h4>Mac DeMarco</h4>
+        <a href="https://www.tiktok.com/search?q=Mac%20DeMarco" target="_blank">
+            <img src="img/plataforma.png" alt="TikTok">
+        </a>
+        <a href="https://open.spotify.com/search/Mac%20DeMarco" target="_blank">
+            <img src="img/spotify.png" alt="Spotify">
+        </a>
+    </div>
+
+</div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 Festival de Verano.
+                Ruiz Arguelles Jose Manuel
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

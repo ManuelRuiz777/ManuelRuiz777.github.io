@@ -1,0 +1,446 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+header {
+    width: 100%;
+    background-color: #191919;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffbd24;
+}
+
+/* PORTADA PRINCIPAL */
+#hero {
+    min-height: 650px;
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+        url("img/img1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content h1 {
+    font-size: 46px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffbd24;
+    color: #171717;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f49b12;
+    transform: scale(1.05);
+}
+
+/* SECCIÓN DE ARTISTAS */
+#artistas {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #171717;
+}
+
+#artistas h2,
+#entradas h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffbd24;
+}
+
+.aviso {
+    color: #bbb;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+.artistas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.artista-card {
+    background-color: #242424;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    border: 1px solid #383838;
+    transition: 0.3s;
+}
+
+.artista-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffbd24;
+}
+
+.artista-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.artista-card h3 {
+    color: #ffbd24;
+    font-size: 23px;
+    margin: 20px 10px 10px;
+}
+
+.artista-card > p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.info-concierto {
+    margin: 0 20px;
+    padding: 18px;
+    background-color: #191919;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.info-concierto h4 {
+    color: #ffbd24;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.info-concierto p {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.info-concierto strong {
+    color: white;
+}
+
+/* SECCIÓN DE ENTRADAS */
+#entradas {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #202020;
+}
+
+.entradas-grid {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.entrada-card {
+    background-color: #292929;
+    width: 320px;
+    padding: 35px 25px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    transition: 0.3s;
+}
+
+.entrada-card:hover {
+    transform: translateY(-7px);
+}
+
+.entrada-card.destacada {
+    border: 2px solid #ffbd24;
+}
+
+.entrada-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-size: 30px;
+    color: #ffbd24;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.entrada-card ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.entrada-card ul li {
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.entrada-card ul li::before {
+    content: "✓ ";
+    color: #ffbd24;
+    font-weight: bold;
+}
+
+.entrada-card button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffbd24;
+    color: #171717;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.entrada-card button:hover {
+    background-color: #f49b12;
+}
+
+/* CONTACTO */
+footer {
+    background-color: #111;
+}
+
+.contacto {
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.subtitulo {
+    color: #ffbd24;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.contact-content h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    color: #bbb;
+    margin-bottom: 35px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #242424;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #ffbd24;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form label {
+    color: #eee;
+    font-size: 15px;
+}
+
+form select option {
+    background-color: #242424;
+}
+
+form .btn-enviar {
+    background-color: #ffbd24;
+    color: #171717;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form .btn-enviar:hover {
+    background-color: #f49b12;
+}
+
+/* REDES SOCIALES DEBAJO DEL FORMULARIO */
+.redes-sociales {
+    margin-top: 65px;
+    padding-top: 35px;
+    border-top: 1px solid #444;
+}
+
+.redes-sociales h3 {
+    font-size: 25px;
+    color: #ffbd24;
+    margin-bottom: 12px;
+}
+
+.redes-sociales > p {
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.red-artista {
+    background-color: #222;
+    border: 1px solid #383838;
+    border-radius: 10px;
+    padding: 25px 10px;
+}
+
+.red-artista h4 {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.red-artista a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.red-artista img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.red-artista img:hover {
+    transform: scale(1.2);
+}
+
+/* PIE DE PÁGINA */
+.footer-bottom {
+    background-color: #191919;
+    padding: 22px;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* DISEÑO RESPONSIVO */
+@media (max-width: 850px) {
+    .artistas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .artistas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content h2 {
+        font-size: 28px;
+    }
+}
